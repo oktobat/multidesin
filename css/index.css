@@ -1,0 +1,168 @@
+@charset "utf-8";
+.inner { max-width:1140px; margin:0 auto }
+#header {
+    position:absolute; top:0; left:0; 
+    width:100%; 
+}
+#header h1 { float:left; 
+    width:184px; 
+    padding:32px 0; }
+#nav { float:right; }
+#nav .depth1 > li { float:left; 
+    font-size:16px;
+    color:#374785; 
+    position:relative;
+}
+#nav .depth1 > li > a { padding:40px 27px 10px; }
+#nav .depth1 > li > a::after {
+    content:'\f107';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900 !important;
+    padding-left:10px;
+}
+#nav .depth1 > li:hover > a::after {
+    content:'\f106';
+}
+#nav .depth1 > li:first-child > a::after, 
+#nav .depth1 > li:last-child > a::after { display:none }
+
+#nav .depth2 {
+    position:absolute; top:100%; left:0; 
+    width: 160px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.1);
+    padding: 8px 0;
+    display:none;
+}
+#nav .depth1 > li:hover .depth2 {
+    display:block;
+}
+#nav .depth2 li a {
+    font-size: 14px;
+    padding: 8px 16px;
+    color: #9a9aa0;
+    display:block; 
+}
+#nav .depth2 li:hover a {
+    color: #374785;
+    background: #e7e7f9;
+}
+
+#section article h2 {
+    font-size:30px; color:#282866;
+    text-align:center; margin-bottom:30px;
+}
+#section .article1 {
+    padding-top:106px; 
+    background:#eef5fc
+}
+#section .article1 .inner {
+    background:url(../images/mainbanner.png) no-repeat;
+    background-size:500px auto; 
+    background-position:left 50px;
+    overflow:hidden; 
+    padding-top:62px; 
+}
+#section .article1 .inner .slogun {
+    width:50%; float:right;
+    padding-bottom:245px;  
+    word-break:keep-all;
+    line-height:1.5;
+}
+#section .article1 .inner .slogun h2 {
+    font-size:29px; color:#2e2e2e;
+    margin-bottom:40px; 
+}
+#section .article1 .inner .slogun p {
+    font-size:18px; color:#505050;
+}
+#section .article2 { padding:50px 0; }
+#section .article2 .design {
+    overflow:hidden; text-align:center; 
+}
+#section .article2 li { float:left; width:25%;
+    padding:0 10px; 
+}
+#section .article2 li .icon {
+    font-size:50px; margin-bottom:20px; 
+    color:#282866;
+}
+#section .article2 li h3 {
+    font-size:19px; color:#282866; 
+}
+#section .article2 li p {
+    font-size:14px; color:#7a7a7a; 
+    padding:14px 0;
+    line-height:1.5;
+}
+#section .article3 { padding:50px 0 }
+#section .article3 .hlayout { overflow:hidden }
+#section .article3 li {
+    float:left; width:33.33%; 
+    padding:0 10px; text-align:center; 
+}
+#section .article3 li h3 {
+    font-size:18px; color:#2e2e2e;
+    margin-top:20px; 
+}
+
+#section .article4 {
+    padding:240px 0;
+    background:url(../images/videobanner.png) no-repeat;
+    background-size:cover; 
+    background-position:center; 
+}
+#section .article4 .icon {
+    color:#fff; font-size:30px; 
+    width:100px; height:100px; 
+    border-radius:50%; 
+    border:5px solid #fff; 
+    text-align:center; 
+    line-height:85px; 
+    margin:0 auto; 
+}
+
+#section .article5 { padding:50px 0; }
+#section .article5 .blayout { overflow:hidden }
+#section .article5 li {
+    float:left; width:33.33%; 
+    text-align:center; padding:0 10px; }
+#section .article5 li h3 {
+    font-size:18px; color:#2e2e2e;
+    margin-top:20px; }
+
+#section .article6 {
+     background:#eef5fc
+}
+#section .article6 .inner {
+    background:url(../images/subbanner.png) no-repeat;
+    background-position:right center;
+    background-size:600px auto;
+    padding:130px 0;
+}
+#section .article6 .text {
+    width:50%; 
+}
+#section .article6 .text h2 {
+    font-size:36px; color:#2e2e2e;
+    margin-bottom:40px; text-align:left
+}
+#section .article6 .text p {
+    font-size:16px; color:#505050;
+    word-break: keep-all;
+    line-height:1.5
+}
+
+#footer {
+    padding:75px 0; background:#282866;
+    color:#fff; text-align:center; 
+}
+#footer .sns a {
+    width:66px; height:66px; background:#fff;
+    color:#282866;
+    border-radius:50%;
+    font-size:35px; line-height:63px;
+    margin:0 20px 50px; 
+}
+#footer .contact a { margin:0 15px}
